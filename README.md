@@ -30,6 +30,26 @@ HTTP (Hyptertext Transfer Protocol) is a common web protocol. Common used when b
 [HTTP Basics](https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 
 
+## Git
+
+Git is a distributed version control system.
+Note that "git branch -D modify-feature" (ie. -D switch) will delete the branch even though we haven't merged changes.
+
+```git
+# create and checkout a new branch, modify-feature
+git checkout -b modify-feature
+
+# list branches
+git branch
+
+#checkout master and then merge modify-feature branch
+git checkout master
+git merge modify-feature
+
+#delete branch
+git branch -d modify-feature
+```
+
 
 ## MongoDB
 
